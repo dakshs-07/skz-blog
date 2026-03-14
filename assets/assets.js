@@ -1,13 +1,18 @@
 import logo from "./logo.png";
 import LeeKnow from "./lee-know.jpg";
 import Maniac from "./maniac.jpg";
-import SZK1 from "./skz-2.jpg";
+import SKZ1 from "./skz-2.jpg";
 import SKZ2 from "./skz-3.jpg";
 import DOIT from "./do-it.jpg";
 
 
 export const assets = {
   logo,
+  LeeKnow,
+  Maniac,
+  SKZ1,
+  SKZ2,
+  DOIT
 };
 
 export const blogdata = [
@@ -17,7 +22,7 @@ export const blogdata = [
     description: "How the chaotic Stray Kids grew through the years.",
     date: Date.now(),
     category: "SKZ",
-    image: SZK1,
+    image: SKZ1,
   },
   {
     id: 2,
@@ -28,6 +33,11 @@ export const blogdata = [
     image: LeeKnow,
   },
   {
-    id
+    id:3,
+    title: "Han Jisung the Ace of Kpop",
+    description: "The cleanest bug in the world lol - know more about the rapper babygirl of SKZ",
+    date: Date.now(),
+    category: "Han Jisung",
+    image: DOIT,
   }
 ];
