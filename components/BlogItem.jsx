@@ -10,7 +10,7 @@ const BlogItem = ({ blog }) => {
       <div className="relative w-full h-48 border border-black hover:shadow-[-7px_7px_0px_#000000] cursor-pointer">
         <Link href={blog?.slug ? `/blog/${blog.slug}` : "/"}>
           <Image
-            href={blog.image}
+            src={blog.image}
             alt={blog.title}
             fill
             className="object-cover"
