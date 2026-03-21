@@ -23,6 +23,7 @@ export const blogdata = [
     date: Date.now(),
     category: "SKZ",
     image: SKZ1,
+    slug:"stray-kids"
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ export const blogdata = [
     date: Date.now(),
     category: "Lee Know",
     image: LeeKnow,
+    slug: "lee-know-cats"
   },
   {
     id:3,
@@ -39,5 +41,15 @@ export const blogdata = [
     date: Date.now(),
     category: "Han Jisung",
     image: DOIT,
+    slug: "han-jisung"
+  },
+  {
+    id: 4,
+    title: "Lee Know's Cats",
+    description: "Soonie Dongie Dorui AUra",
+    date: Date.now(),
+    category: "Lee Know",
+    image: LeeKnow,
+    slug: "lee-know"
   }
 ];
