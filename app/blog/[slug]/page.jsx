@@ -1,10 +1,20 @@
+// 'use Client';
 import { blogdata } from "@/assets/assets";
 import Image from "next/image";
-import React from "react";
 
 async function page({ params }) {
   const { slug } = await params;
   const blog = blogdata.find((b) => b.slug === slug);
+  
+//   const [data, setData] = useState(null);
+//   const fetchBlogData = () => {
+
+//   }
+//   useEffect(()=>{
+//     fetchBlogData();
+//   },[])
+  
+  
   if (!blog) return <div>Blog not found!</div>;
   return (
     <div>
