@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { assets } from "@/assets/assets";
+import { assets } from "@/public/assets/assets";
 import { ArrowRight } from "lucide-react";
 import Subscription from "./Subscription";
 

@@ -1,30 +1,23 @@
-// 'use Client';
-import { blogdata } from "@/assets/assets";
-import Image from "next/image";
+const { default: Image } = require("next/image");
 
-async function page({ params }) {
-  const { slug } = await params;
-  const blog = blogdata.find((b) => b.slug === slug);
-  
-//   const [data, setData] = useState(null);
-//   const fetchBlogData = () => {
+export default async function Page({params}){
+  const {slug} = await params;
+  const res = await fetch("http://localhost:3000/api/blog", {
+    cache: "no-store",
+  })
+  const blogs = await res.json();
+  const blog = blogs.find((b)=>b.slug=== slug);
 
-//   }
-//   useEffect(()=>{
-//     fetchBlogData();
-//   },[])
-  
-  
-  if (!blog) return <div>Blog not found!</div>;
-  return (
-    <div>
-      <div className="flex flex-col justify-center items-center gap-2">
-        <Image src={blog.image} alt={blog.title} height={400} width={400} />
-        <h1 className="text-3xl tracking-wider">{blog.title}</h1>
-        <p className="text-sm text-gray-500">{blog.description}</p>
+  if (!blog) return <div>Blog not found noooo!</div>;
+
+  return(
+    <div className="min-h-screen flex flex-col items-center">
+      <div className="flex flex-col items-center gap-2">
+        <Image src="/assets/do-it.jpg" alt={blog.title} width={400} height={400} />
+        <h1 className="text-5xl">{blog.title}</h1>
+        <p>{blog.description}</p>
+        <p>{blog.content}</p>
       </div>
     </div>
-  );
+  )
 }
-
-export default page;

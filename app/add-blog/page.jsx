@@ -48,16 +48,15 @@ export default function AddBlog() {
         />
         <input
           type="text"
-          onChange={(e) => setForm({ ...form, image: e.target.value })}
+          onChange={(e) => setForm({ ...form, category: e.target.value })}
           className={inputStyle}
-          placeholder="Blog Content"
+          placeholder="Category"
           required
         />
         <input
           type="text"
-          onChange={(e) => setForm({ ...form, category: e.target.value })}
+          onChange={(e) => setForm({ ...form, content: e.target.value })}
           className={inputStyle}
-          placeholder="Category"
           required
         />
         <input
@@ -67,7 +66,9 @@ export default function AddBlog() {
           placeholder="Slug"
           required
         />
-        <button className="bg-black w-50 mx-auto p-2 text-white cursor-pointer hover:bg-black/50 hover:border">ADD BLOG</button>
+        <button className="bg-black w-50 mx-auto p-2 text-white cursor-pointer hover:bg-black/50 hover:border">
+          ADD BLOG
+        </button>
       </form>
     </div>
   );

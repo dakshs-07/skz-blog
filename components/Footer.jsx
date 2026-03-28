@@ -1,4 +1,4 @@
-import { assets } from "@/assets/assets";
+import { assets } from "@/public/assets/assets";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import Image from "next/image";
 import React from "react";

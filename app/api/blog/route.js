@@ -10,10 +10,10 @@ export async function GET() {
 export async function POST(req) {
   await connectDB();
   const body = await req.json();
-  const { title, description, image, category, slug } = body;
-  if (!title || !description || !image || !!category || !slug) {
+  const { title, description, content, category, slug } = body;
+  if (!title || !description || !content || !category || !slug) {
     return Response.json({ error: "All fields are required" }, { status: 400 });
   }
-  const blog = await Blog.create(body);
+  const blog = await Blog.create({...body, image: "/assets/skz-2.jpg"});
   return Response.json(blog);
 }
