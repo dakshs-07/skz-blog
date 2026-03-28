@@ -2,7 +2,7 @@ import React from "react";
 
 function Subscription() {
   return (
-    <div className="text-center mb-8">
+    <div className="text-center my-8">
       <p className="text-5xl tracking-wide font-medium">Latest Blogs</p>
       <p className="mt-10 max-w-185 m-auto text-xs sm:text-base ">
         Find all the info you need on Stray Kids - latest, past and what not all
