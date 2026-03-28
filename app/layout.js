@@ -2,6 +2,7 @@ import { Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Topbar from "@/components/Topbar";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.variable} antialiased`}
       >
+        <Topbar />
         <Header />
         {children}
         <Footer />
