@@ -8,7 +8,7 @@ function Footer() {
     <button className="hover:opacity-90 cursor-pointer">{children}</button>
   );
   return (
-    <div className="flex flex-col justify-around items-center gap-2 sm:flex-row bg-black text-white py-5 mt-10">
+    <div className="flex flex-col justify-around items-center gap-2 sm:flex-row bg-black text-white py-5">
       <Image src={assets.logo} alt="footer logo" width={200} height={200} />
       <p className="text-sm tracking-wide">
         All rights reserved, Stray Kids Blog 2026
