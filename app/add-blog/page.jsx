@@ -53,10 +53,10 @@ export default function AddBlog() {
           placeholder="Category"
           required
         />
-        <input
-          type="text"
+        <textarea
           onChange={(e) => setForm({ ...form, content: e.target.value })}
-          className={inputStyle}
+          className={`${inputStyle} min-h-[150px]`}
+          placeholder="Blog Content"
           required
         />
         <input

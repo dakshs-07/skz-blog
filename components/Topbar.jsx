@@ -6,9 +6,9 @@ function Topbar() {
   return (
     <div className="py-1 bg-blue-800 text-white">
       <div className="flex items-center justify-center gap-6">
-        <Link href="/add-blog" className={LinkStyle}>All Blogs</Link>
+        <Link href="/" className={LinkStyle}>All Blogs</Link>
         <Link href="/add-blog" className={LinkStyle}>Add A blog</Link>
-        <Link href="/add-blog" className={LinkStyle}>Subscribe</Link>
+        <Link href="/" className={LinkStyle}>Subscribe</Link>
       </div>
     </div>
   );
