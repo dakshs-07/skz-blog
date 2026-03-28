@@ -17,8 +17,8 @@ const BlogItem = ({ blog }) => {
           />
         </Link>
       </div>
-      <div className="cursor-pointer">
-        <span className="bg-blue-900 text-white w-full h-3 p-1 text-sm">
+      <div className="cursor-pointer my-1">
+        <span className="bg-blue-900 rounded-sm text-white w-full h-3 p-1 text-sm">
           {blog.category}
         </span>
         <h1 className="text-xl py-2">{blog.title}</h1>
