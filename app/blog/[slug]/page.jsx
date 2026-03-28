@@ -11,6 +11,7 @@ export default async function Page({params}){
   const blogs = await res.json();
   const blog = blogs.find((b)=>b.slug=== slug);
 
+
   if (!blog) return <div>Blog not found noooo!</div>;
 
   return (

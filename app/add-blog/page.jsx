@@ -36,7 +36,7 @@ export default function AddBlog() {
           type="text"
           onChange={(e) => setForm({ ...form, title: e.target.value })}
           className={inputStyle}
-          placeholder="Name"
+          placeholder="Title"
           required
         />
         <input
@@ -57,13 +57,6 @@ export default function AddBlog() {
           onChange={(e) => setForm({ ...form, content: e.target.value })}
           className={`${inputStyle} min-h-[150px]`}
           placeholder="Blog Content"
-          required
-        />
-        <input
-          type="text"
-          onChange={(e) => setForm({ ...form, slug: e.target.value })}
-          className={inputStyle}
-          placeholder="Slug"
           required
         />
         <button className="bg-black w-50 mx-auto p-2 text-white cursor-pointer hover:bg-black/50 hover:border">
