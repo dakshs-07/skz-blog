@@ -4,7 +4,7 @@ import React from 'react'
 export function LeftSidebar() {
   return (
     <div>
-      <div className='flex flex-col gap-5 py-10 mx-2'>
+      <div className='flex flex-col gap-5 py-10 mx-2 sm:gap-20'>
         <Image src="/skzoo/dwakei.png" alt="dwaeki" height={200} width={200} className='rotate-30'/>
         <Image src="/skzoo/foxin.png" alt="dwaeki" height={200} width={200} className='-rotate-20'/>
         <Image src="/skzoo/Hyunjin.png" alt="dwaeki" height={200} width={200} className='rotate-45' />
@@ -17,7 +17,7 @@ export function LeftSidebar() {
 export function RightSideBar(){
     return (
       <div>
-        <div className="flex flex-col gap-5 py-10 mx-2">
+        <div className="flex flex-col gap-5 py-10 mx-2 sm:gap-20">
           <Image
             src="/skzoo/leebit.png"
             alt="dwaeki"
