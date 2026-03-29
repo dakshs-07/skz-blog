@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 function Header() {
   return (
     <div className="relative py-2 px-5 md:px-12 lg:px-28">
-      <Image src="/banner.jpg" alt="bg" fill className="object-cover -z-10" />
+      <Image src="/banner1.jpg" alt="bg" fill className="object-cover -z-10" />
       <div className="flex justify-between items-center">
         <a href="/">
           <Image

@@ -5,9 +5,7 @@ export default function AddBlog() {
   const [form, setForm] = useState({
     title: "",
     description: "",
-    image: "",
     category: "",
-    slug: "",
   });
 
   const handleSubmit = async (e) => {
@@ -22,7 +20,6 @@ export default function AddBlog() {
   };
   const inputStyle =
     "w-full px-4 py-2 border border-black-500/40 placeholder-gray-400 font-extralight focus:outline-none focus:ring-2 focus:ring-black-500 focus:border-black-500 transition";
-
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-linear-to-br from-white via-white to-blue-400/90">
       <h1 className="text-5xl font-semibold text-center tracking-wider mb-3">
