@@ -22,6 +22,9 @@ function Topbar() {
           <Link href="/" className={LinkStyle}>
             Subscribe
           </Link>
+          <Link href="/about" className={LinkStyle}>
+            About
+          </Link>
         </div>
         <Moon onClick={() => setDark(!dark)} className="pr-1 cursor-pointer" />
       </div>
