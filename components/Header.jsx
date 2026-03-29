@@ -10,7 +10,7 @@ function Header() {
       <Links className="absolute left-0" />
       <Image src="/banner3.webp" alt="bg" fill className="object-cover -z-10" />
       <div className="relative py-30 md:px-12 lg:px-28">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-start">
           <a href="/">
             <Image
               src={assets.logo}
