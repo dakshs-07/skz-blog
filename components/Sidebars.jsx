@@ -23,21 +23,21 @@ export function RightSideBar(){
             alt="dwaeki"
             height={200}
             width={200}
-            className="rotate-30"
+            className="-rotate-30"
           />
           <Image
             src="/skzoo/quokka.jpg"
             alt="dwaeki"
             height={200}
             width={200}
-            className="-rotate-20"
+            className="rotate-20"
           />
           <Image
             src="/skzoo/bbokari.jpg"
             alt="dwaeki"
             height={200}
             width={200}
-            className="rotate-45"
+            className="-rotate-45"
           />
           <Image
             src="/skzoo/wolfchan.jpg"
