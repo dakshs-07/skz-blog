@@ -1,32 +1,32 @@
 import Image from "next/image";
 import React from "react";
 
-const ImageHover = "hover:rotate-3 cursor-pointer";
+const ImageStyle = "hover:rotate-3 cursor-pointer";
 function page() {
   return (
-    <div className="my-10 mx-50">
+    <div className="my-10 mx-4 sm:mx-8 lg:mx-20">
       <div className="flex mt-5">
-        <div className="p-2 flex flex-col justify-center">
-          <Image
-            src="/assets/do-it.jpg"
-            alt="img1"
-            width={600}
-            height={600}
-            className={`${ImageHover} rotate-6`}
-          />
+        <div className="p-2 flex flex-col justify-center gap-5">
+            <Image
+              src="/assets/do-it.jpg"
+              alt="img1"
+              width={600}
+              height={600}
+              className={`${ImageStyle} rotate-6`}
+            />
           <Image
             src="/assets/skz-2.jpg"
             alt="img1"
             width={600}
             height={600}
-            className={`${ImageHover} -rotate-12`}
+            className={`${ImageStyle} -rotate-12`}
           />
           <Image
             src="/assets/skz-3.jpg"
             alt="img1"
             width={600}
             height={600}
-            className={`${ImageHover} rotate-8`}
+            className={`${ImageStyle} rotate-8`}
           />
         </div>
         <div className="flex flex-col justify-center mx-2 text-lg text-center gap-5">
@@ -43,27 +43,27 @@ function page() {
             others are yapping about!
           </p>
         </div>
-        <div className="p-2 flex flex-col justify-center">
+        <div className="p-2 flex flex-col justify-center gap-5">
           <Image
             src="/assets/lee-know.jpg"
             alt="img1"
             width={600}
             height={600}
-            className={`${ImageHover} -rotate-6`}
+            className={`${ImageStyle} -rotate-6`}
           />
           <Image
             src="/assets/maniac.jpg"
             alt="img1"
             width={600}
             height={600}
-            className={`${ImageHover} rotate-12`}
+            className={`${ImageStyle} rotate-12`}
           />
           <Image
             src="/assets/skz-2.jpg"
             alt="img1"
             width={600}
             height={600}
-            className={`${ImageHover} -rotate-8`}
+            className={`${ImageStyle} -rotate-8`}
           />
         </div>
       </div>
