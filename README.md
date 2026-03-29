@@ -1,3 +1,13 @@
+# Stray Kids Blog
+This is a *dedicated* website for uploading anf viewing Stray Kids blogs. Got tea to share? Wanna yap about your bias. This is it. This is your place lol.
+
+
+I learned how to make better use of tailwind classes and how to use mongodb to store and fetch blog data. I am really happy i could use mongodb coz i used to struggle with it on earlier pprojs i tried making. i also tried my best to make the website look magical and aesthetic witrh the stray kids vibes everywhere, and i love love love the skzoos on teh sides <3
+
+
+
+
+
 features to add:
 skz banner
 slug from titel tiself
